@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/912f1a8437.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -29,7 +30,7 @@
       <div class="ball"></div>
       <div class="ball"></div>
       <div class="ball"></div>
-      <nav>
+      <nav id="navbar">
         <ul class="nav-list">
           <li class="nav-item">
             <a href="#about" class="nav-link">About</a>
@@ -45,9 +46,55 @@
         </ul>
       </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="welcome-section">
       <h1>Hey, I am Inna</h1>
       <i>a web developer</i>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="project-tile">Here are some of my projects</h2>
+      <ul class="projects-list">
+        <li class="projects-item">
+          <a href="https://myweather16.netlify.app/" class="projects-link">
+            <img  class="projects-img" src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-png-8.png" alt="cloud and sun icon">
+            <h3>Weather App</h3>
+          </a>
+        </li>
+        <li class="projects-item">
+          <a href="https://ukraine-freecodecamp-project.netlify.app/" class="projects-link">
+            <img class="projects-img" 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Outline_of_Ukraine.svg/2560px-Outline_of_Ukraine.svg.png"
+              alt="Ukraine map">
+            <h3>Tribute page</h3>
+          </a>
+        </li>
+        <li class="projects-item">
+          <a href="https://innaforkert.github.io/FCC-project-4/" class="projects-link">
+            <img class="projects-img" 
+              src="https://cdn-icons-png.flaticon.com/512/199/199436.png"
+              alt="trumpet icon">
+            <h3>Landing page</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="contact" id="contact">
+      
+        <h2>Let's keep in touch!</h1>
+      
+        <h3 class="email">inna.forkert@gmail.com</h2>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/%D1%84%D0%BE%D1%80%D0%BA%D0%B5%D1%80%D1%82-%D1%96%D0%BD%D0%BD%D0%B0-%D0%BE%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D0%B2%D0%BD%D0%B0-b8a818243/"
+            target="_blank" title="link to my linkedin profile" id="profile-link">
+            <i class="fa-brands fa-linkedin large fa-bounce"></i></a>
+          <a href="https://www.facebook.com/inna.forkert" target="_blank" title="link to my facebook profile"><i
+              class="fa-brands fa-facebook large fa-bounce second-bouncer"></i></a>
+          <a href="https://www.instagram.com/inna_forkert/" target="_blank" title="link to my instagram profile"><i
+              class="fa-brands fa-instagram large fa-bounce third-bouncer"></i></a>
+          <a href="https://github.com/InnaForkert" target="_blank" title="link to my github profile"><i
+              class="fa-brands fa-github large fa-bounce fourth-bouncer"></i></a>
+          <a href="https://t.me/inna_forkert" target="_blank" title="link to my telegram"><i
+              class="fa-brands fa-telegram large fa-bounce fifth-bouncer"></i></a>
+        </div>
     </section>
   </body>
 </html>

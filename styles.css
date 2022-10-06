@@ -10,7 +10,7 @@ header {
   width: 100%;
   padding: 15px 20px;
 
-  /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+  
   background-color: #d5dce3;
 }
 
@@ -20,11 +20,16 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: currentColor;
+  display: block;
+}
+
+img {
   display: block;
 }
 
@@ -134,4 +139,130 @@ i {
   100% {
     transform: translate(50px, -125px);
   }
+}
+
+h2, h3 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+    color: #2b2d42;
+
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-item {
+    max-width: 400px;
+  }
+  .projects-img {
+    max-height: 300px;
+  }
+}
+
+.projects-item {
+  flex-basis: 30vw;
+
+
+}
+
+.projects-link {
+  background-color: #ee8b98;
+  border-radius: 15px;
+  padding: 15px;
+
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.projects-img {
+  width: 100%;
+  height: 25vw;
+  background-color: #d5dce3;
+  border-radius: 15px;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+h3:before {
+  content: "< ";
+  opacity: 0;
+  color: #ef233c;
+  font-size: 20px;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+h3:after {
+  content: " />";
+  opacity: 0;
+  color: #ef233c;
+  font-size: 20px;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.projects-link:hover .projects-img {
+  background-color: #ee8b98;
+}
+
+.projects-link:hover {
+  background-color: #d5dce3;
+
+}
+
+.projects-link:hover h3:after,
+.projects-link:hover h3:before {
+ opacity: 1;
+}
+
+
+.large {
+  font-size: 96px;
+  margin-bottom: 60px;
+  --fa-animation-duration: 2s;
+
+}
+
+.second-bouncer {
+  --fa-animation-delay: 0.4s;
+}
+
+.third-bouncer {
+  --fa-animation-delay: 0.8s;
+}
+
+.fourth-bouncer {
+  --fa-animation-delay: 1.2s;
+}
+
+.fifth-bouncer {
+  --fa-animation-delay: 1.6s;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 20px;
+
+  
+}
+
+.contact {
+  background-color: #d5dce3;
+  padding: 20px;
+}
+
+.projects {
+  padding: 20px;
+}
+
+.fa-brands {
+  color: #d90429
 }
